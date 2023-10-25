@@ -1,0 +1,56 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("me.png");
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.logo {
+position: relative;
+right: 200px;
+}
+
+.done {
+    margin-bottom: 7px;
+    padding-left: 20px;
+    border-left: 20px solid #3bbe57;
+  }
+.progress {
+    border-left: 20px solid #bd8532;
+}
+.no {
+    border-left: 20px solid #bd3232;
+}
+
+.list {
+    padding: 0;
+    list-style: none;  
+}

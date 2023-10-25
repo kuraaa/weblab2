@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+.university-logo {
+  padding-left: 33%;
+  padding-right: auto;
+}
+.second-column {
+  padding-left: 10px;
+}
+table {
+  padding-left: 620px;
+}
+.main-text{
+  text-align: left;
+}
+.progressimg{
+  width: 70%;
+  height: auto;
+}
+.aboutmeimg{
+  width: 70%;
+  height: auto;
+}
