@@ -47,7 +47,6 @@
     <div class="container">
         <h1>Comments</h1>
         <div id="comments">
-            <!-- Comments will be displayed here -->
         </div>
         <form id="commentForm">
             <label for="comment">Comment:</label>
@@ -58,27 +57,20 @@
 
     <script src="script.js"></script>
  <script>
-        // Функция для перенаправления на страницу логина
         function redirectToLogin() {
-            // Замените "login.html" на фактический путь к вашей странице логина
             window.location.href = "login.html";
         }
   document.addEventListener('DOMContentLoaded', function () {
-    // Get the username from the URL query parameters
     const urlParams = new URLSearchParams(window.location.search);
-    const username = urlParams.get('username');
-
-    // Display the username on the page
+    var name = sessionStorage.getItem('loggedInUser');;
     const usernameDisplay = document.getElementById('username-display');
-    if (username) {
-        usernameDisplay.textContent = (username);
+    if (name) {
+        usernameDisplay.textContent = (name);
     } else {
         usernameDisplay.textContent = 'Welcome!';
     }
 });
     </script>
-
-
 </body>
 
 </html>
