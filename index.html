@@ -8,6 +8,12 @@
 <body>
     <header>
         <h1>сайт-визитка</h1>
+  <div id="username-display"></div>
+  <div style="display: flex; justify-content: end">
+  <button onclick="redirectToLogin()" style="height: 50px;">Перейти к странице логина</button>
+
+    
+  </div>
     </header>
 
     <div class="container">
@@ -31,15 +37,48 @@
             <h2>Контактная информация</h2>
             <p>Email: x51nody@gmail.com<br>
                Телефон: +7(983) 100 1459<br>
-               tg: <a href="https://github.com/Sp1r14ual">@kuraaaa1</a></p>
+               tg: <a href="https://web.telegram.org/k/#@kuraaaa1">@kuraaaa1</a></p>
                <h2><a href="report.html">Ссылка на отчет</a></h2>
         </div>
         
     </div>
 
-    <footer>
-        <p>&copy; 2023 Мой сайт-визитка.</p>
-    </footer>
+
+    <div class="container">
+        <h1>Comments</h1>
+        <div id="comments">
+            <!-- Comments will be displayed here -->
+        </div>
+        <form id="commentForm">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="4" required></textarea>
+            <button type="button" onclick="addComment()">Add Comment</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+ <script>
+        // Функция для перенаправления на страницу логина
+        function redirectToLogin() {
+            // Замените "login.html" на фактический путь к вашей странице логина
+            window.location.href = "login.html";
+        }
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get the username from the URL query parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('username');
+
+    // Display the username on the page
+    const usernameDisplay = document.getElementById('username-display');
+    if (username) {
+        usernameDisplay.textContent = (username);
+    } else {
+        usernameDisplay.textContent = 'Welcome!';
+    }
+});
+    </script>
+
+
 </body>
 
 </html>
